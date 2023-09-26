@@ -1,38 +1,142 @@
-.App {
+*
+{
+  background-color:#010057;  
+}
+header{
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1{
+  color: #f1b41a;
+  font-size:40px;
+  font-family: 'Kanit', sans-serif;
+  margin:0;
+  padding: 0;
 }
+h2{
+margin: 0;
+padding: 0;
+color: #32a852;
+font-size: 20px;
+font-family: 'Kanit', sans-serif;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+}
+.array-container {
+  position: relative;
+  top: 50px;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+    
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .array-bar {
+    display: inline-block;
+    margin: 0 5px;
+    padding-top: 7px;
+    margin-bottom: 5px;
+    border: 3px;
+    font-family: 'Kanit', sans-serif;
+    
   }
-  to {
-    transform: rotate(360deg);
+  button
+  {
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 20px;
+    width: 150px;
+    height: 45px;
+    border-color: #f1b41a;
+    border-radius: 10px;
+    color:#fad1c4;
+    font-family: 'Kanit', sans-serif;
+    font-size: 15px;
+    transition: background 300ms ease-in-out;
+    
+  }
+  button:hover
+  {
+    background: skyblue;
+    color: black;
+    box-shadow: 0 0 10px 0 gold;
+  }
+  select{
+    border-color: #fad1c4;
+    border-radius: 10px;
+    padding: 10px 10px 10px 10px;
+    color: #f1b41a;
+    cursor: pointer;
+    margin: 10px 10px 10px 10px;
+    font-size: 15px;
+    font-family: 'Kanit', sans-serif;
+
+  }
+  .ranger
+  {
+    position: relative;
+    top: 7px;
+    width: 120px;
+    cursor: pointer;
+
+  }
+  option
+  {
+    font-size: 15px;
+    font-family: 'Kanit', sans-serif;
+  }
+  input,p
+
+  {
+    font-family: 'Kanit', sans-serif;
+    display: inline-block;
+    margin-left: 20px ;
+  }
+  p{
+    font-size: 20px;
+    color:#fad1c4;
+  }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.speed
+{
+  display: inline-block;
+}
+input[type="number" i] {
+  padding-left: 15px;
+}
+input{
+    border-width: 3px;
+    border-radius: 10px;
+    width: 50px;
+    height: 25px;
+    border-color: #fad1c4;
+    font-size: 13px;
+    font-family: 'Kanit', sans-serif;
+    color: #fad1c4;
+}
+.enter
+{
+  display: block;
+}
+.inputs
+{
+  display:inline-block;
+}
+@media only screen and (max-width:600px)
+{
+  .array-bar{
+     font-size: 8px;
+     margin-right: 0.8px;
+  }
+  button
+  {
+    width: 100px;
+    height: 40px;
+    font-size:12px ;
+  }
+  option,select{
+    font-size: 10px;
   }
 }
